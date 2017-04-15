@@ -16,7 +16,7 @@
   height: 100%;
 }
 body {
-  font-family: 'Lato', Arial;
+  font-family: "Helvetica Neue", Helvetica;
   color: #666666;
   -webkit-font-smoothing: antialiased;
 }
@@ -57,8 +57,8 @@ header .navbar-default ul.navbar-nav {
 }
 header .navbar-default ul.navbar-nav li a {
   text-transform: capitalize;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 650;
+  font-size: 19px;
   padding: 7px 20px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -70,7 +70,7 @@ header .navbar-default ul.navbar-nav li a:after {
   content: '';
   width: 32px;
   background: none;
-  height: 4px;
+  height: 5px;
   position: absolute;
   bottom: 2px;
   z-index: 99999;
@@ -159,12 +159,12 @@ header .navbar-default.scrolled ul.navbar-nav {
 }
 .section-heading h1 {
   display: inline-block;
-  font-size: 55px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 500;
   margin-bottom: 0;
 }
 .section-heading p {
-  font-size: 25px;
+  font-size: 23px;
   color: #999999;
   font-weight: 300;
 }
@@ -194,7 +194,7 @@ section#about {
 }
 section#about .about-item {
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 25px;
   color: #999999;
 }
@@ -228,8 +228,8 @@ section#features .media i.fa {
   text-align: center;
 }
 section#features .media .media-heading {
-  padding-top: 10px;
-  font-weight: 300;
+  padding-top: 20px;
+   font-weight: 300;
 }
 section#features .media .media-body {
   color: #999999;
@@ -263,6 +263,7 @@ section#reviews .review-filtering .review .review-person img {
   -o-border-radius: 50%;
   border-radius: 50%;
   margin: 10px auto;
+  
 }
 section#reviews .review-filtering .review .review-comment {
   width: 100%;
@@ -273,6 +274,8 @@ section#reviews .review-filtering .review .review-comment {
   border-radius: 10px;
   padding: 5px 40px 20px;
   position: relative;
+  float:right;
+  direction:rtl;
 }
 section#reviews .review-filtering .review .review-comment h3 {
   margin-bottom: 15px;
@@ -299,7 +302,7 @@ section#reviews .review-filtering .review .review-comment:after {
 }
 section#reviews .review-filtering .review .review-person,
 section#reviews .review-filtering .review .review-comment {
-  float: left;
+  float: right;
 }
 section#reviews .review-filtering .slick-dots {
   bottom: -80px;
@@ -372,7 +375,9 @@ section#screens .slick-next:before {
 section#screens .filter {
   text-align: center;
 }
-section#screens .filter a {
+section#screens .filter a 
+{
+    font-size: 20px;
   display: inline-block;
   padding: 7px 20px;
   text-decoration: none;
@@ -526,17 +531,29 @@ section::after {
 .tp-caption {
   font-family: 'Lato', Arial !important;
   -webkit-font-smoothing: antialiased;
+
+  
 }
 .tp-caption.large_white_bold {
   color: #ffffff;
   font-size: 65px;
   font-weight: 400;
+ 
+}
+.tp-caption.small_light_white {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align:right;
+ 
 }
 .tp-caption.large_white_light {
   color: #ffffff;
-  font-size: 65px;
+  font-size: 56px;
   font-weight: 400;
   font-weight: 300;
+   
+  
 }
 .btn {
   -webkit-border-radius: 3em;
@@ -745,19 +762,19 @@ form textarea.form-control {
 header {
   background: #66cdcc;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -moz-linear-gradient(-45deg, #34BEC2 0%, #29B7B7 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #336799));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #34BEC2), color-stop(100%, #29B7B7));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -webkit-linear-gradient(-45deg, #34BEC2 0%, #29B7B7 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -o-linear-gradient(-45deg, #34BEC2 0%, #29B7B7 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -ms-linear-gradient(-45deg, #34BEC2 0%, #29B7B7 100%);
   /* IE10+ */
-  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: linear-gradient(-45deg, #34BEC2 0%, #29B7B7 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#336799, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#34BEC2, endColorstr=#29B7B7, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a {
@@ -765,7 +782,7 @@ header .navbar-default ul.navbar-nav li a {
   background: none;
 }
 header .navbar-default ul.navbar-nav li a.getApp {
-  color: #3c79b4;
+  color: #11a8a8;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
@@ -784,7 +801,7 @@ header .navbar-default ul.navbar-nav li a.getApp {
   /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a.getApp:hover {
-  color: #4081bf;
+  color: #34BEC2;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
@@ -816,30 +833,31 @@ header .navbar-default ul.navbar-nav li a:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default.scrolled {
-  border-bottom: 3px solid #336799;
+  border-bottom: 3px solid #34bec2;
 }
 header .navbar-default.scrolled ul.navbar-nav li a {
-  color: #336799;
+  color: #34bec2;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover {
-  color: #336799;
+  color: #34bec2;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
-  background: #336799;
+  background: #34bec2;
 }
 header .navbar-default.scrolled .navbar-brand {
-  background: #336799;
+  background: #34bec2;
 }
 section .section-heading .divider:after {
-  background: #66cdcc;
+  background: #34BEC2;
 }
 section#about .about-item i.fa {
   border: 2px solid #66cdcc;
-  color: #66cdcc;
+  color: #34BEC2;
 }
+
 section#about .about-item:hover i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #F5A7C8;
 }
 section#about .about-item:hover h3 {
   color: #66cdcc;
@@ -856,7 +874,7 @@ section#features .media i.fa {
 }
 section#features .media:hover i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #F5A7C8;
 }
 section#features .media:hover h3 {
   color: #66cdcc;
@@ -878,7 +896,8 @@ section#reviews header h1:after {
   background: #ffffff;
 }
 section#reviews .review-filtering .review .review-person img {
-  border: 3px solid #ffffff;
+   border: 3px solid #66cdcc;
+  color: #66cdcc;
 }
 section#reviews .review-filtering .review .review-comment {
   background: #ffffff;
@@ -899,14 +918,22 @@ section#reviews .review-filtering .slick-dots li button {
 section#reviews .review-filtering .slick-dots li.slick-active button {
   background: #66cdcc;
 }
+section#reviews div h4
+{
+  color: #000000;
+  text-align: center;
+  
+}
 section#screens header h1:after {
   background: #66cdcc;
 }
 section#screens .slider div img {
   border: 2px solid #e5e5e5;
 }
-section#screens .slider div h4 {
+section#screens .slider div h4
+{
   color: #999999;
+   font-weight: 900;
 }
 section#screens .slider .slick-dots li button {
   background: #999999;
@@ -984,19 +1011,19 @@ section#support .media:hover h3 {
 footer {
   background: #66cdcc;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #109995 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #336799));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #109995));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #109995 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -o-linear-gradient(-45deg, #66cdcc 0%, #109995 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #109995 100%);
   /* IE10+ */
-  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: linear-gradient(-45deg, #66cdcc 0%, #109995 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#336799, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#109995, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 footer .social a {
@@ -1006,7 +1033,7 @@ footer .social a i {
   color: #ffffff;
 }
 footer .social a:hover {
-  background: #ffffff;
+  background: #F5A7C8;
 }
 footer .social a:hover i {
   color: #66cdcc;
@@ -1035,6 +1062,7 @@ footer .rights a {
 .btn.btn-primary.inverse {
   color: #ffffff;
   border-color: #ffffff;
+  font-weight: 700;
 }
 .btn.btn-primary.inverse:hover {
   color: #ffffff;
@@ -1058,10 +1086,10 @@ footer .rights a {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
-  color: #336799;
+  color: #34bec2;
 }
 .btn.btn-default:hover {
-  color: #336799;
+  color: #34bec2;
 }
 form .form-control:focus {
   border-color: #66cdcc;
@@ -1074,7 +1102,7 @@ form .form-control:focus {
   }
   header .navbar-default ul.navbar-nav li a {
     color: #ffffff;
-    border-bottom: 1px solid #376fa4;
+    border-bottom: 1px solid #34bec2;
   }
   header .navbar-default ul.navbar-nav li a.getApp {
     color: #ffffff;
@@ -1086,10 +1114,10 @@ form .form-control:focus {
     color: #66cdcc;
   }
   header .navbar-default .navbar-collapse {
-    background: #336799;
+    background: #34bec2;
   }
   header .navbar-default.scrolled {
-    background: #336799;
+    background: #34bec2;
   }
   header .navbar-default.scrolled ul.navbar-nav li a {
     color: #ffffff;
@@ -1099,5 +1127,5 @@ form .form-control:focus {
   }
 }
 .pre-loader {
-  background: #336799;
+  background: #34bec2;
 }
